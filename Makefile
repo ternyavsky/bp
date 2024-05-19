@@ -4,7 +4,7 @@ LOGS = docker logs
 ENV = --env-file .env
 APP_FILE = compose/app.yaml
 STORAGES_FILE = compose/storages.yaml
-APP_CONTAINER = prerecover.api
+APP_CONTAINER = api
 PY = poetry
 
 app:
