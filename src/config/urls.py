@@ -15,6 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+from typing import Union
 from django.contrib import admin
 from django.urls import path
 from ninja import NinjaAPI, Schema
@@ -30,7 +31,7 @@ app.add_router("/", "oauth.views.router")
 
 @app.get("/healthcheck", response={200: StatusOK})
 def healthcheck(request):
-    return "OK"
+    return
 
 
 urlpatterns = [path("admin/", admin.site.urls), path("api/v1/", app.urls)]
