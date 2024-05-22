@@ -16,6 +16,7 @@ Including another URLconf
 """
 
 from typing import Union
+
 from django.contrib import admin
 from django.urls import path
 from ninja import NinjaAPI, Schema
