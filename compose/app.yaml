@@ -12,7 +12,7 @@ services:
     env_file:
       - ../.env
     volumes:
-      - ../src/:/src/
+      - ../src/:/app/src/
     healthcheck:
       test: ["CMD-SHELL", "curl -fsSL http://localhost:8000/api/v1/healthcheck"]
       interval: 10s

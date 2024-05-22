@@ -10,4 +10,4 @@ router = Router()
 
 @router.get("/")
 def index(request):
-    return {"result": "workedwrer"}
+    return {"result": "default"}
