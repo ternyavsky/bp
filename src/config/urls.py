@@ -27,7 +27,6 @@ class StatusOK(Schema):
 
 
 app = NinjaAPI()
-app.add_router("/", "oauth.controllers.router")
 
 
 @app.get("/healthcheck", response={200: StatusOK})
